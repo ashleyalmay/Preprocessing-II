@@ -1,3 +1,4 @@
+/*escaping*/
 .btn {
   display: block;
   background-color: #17A2B8;
@@ -219,6 +220,12 @@ nav nav .first-anchor {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -254,6 +261,12 @@ nav nav .first-anchor {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
