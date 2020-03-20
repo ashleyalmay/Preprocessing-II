@@ -1,3 +1,18 @@
+.btn {
+  display: block;
+  background-color: #17A2B8;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+.btn:hover {
+  background-color: #FFFFFF;
+  color: #17A2B8;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,18 +184,18 @@ img {
   margin: 0 auto;
 }
 nav {
-  width: 40%;
   display: flex;
-  justify-content: space-around;
 }
 nav a {
-  margin-left: 20px;
   font-size: 1.8rem;
+  margin-left: 20px;
   color: #212529;
   text-decoration: none;
+  justify-self: space-between;
+  align-items: baseline;
 }
-nav a:hover {
-  color: #212529;
+nav nav .first-anchor {
+  margin-left: 1%;
 }
 .footer {
   width: 100%;
@@ -192,6 +207,11 @@ nav a:hover {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header {
+  padding-top: 1%;
+  width: 100%;
+  border-top: 2px dashed silver;
 }
 .home .content-section {
   margin: 30px 0;
@@ -238,27 +258,4 @@ nav a:hover {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-.home .header {
-  border-bottom: 2px dashed #C0C0C0;
-  margin: 20px 0;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .home .header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.home .header img {
-  border-radius: 10px;
-}
-.home .header .p {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
-}
-.home .header h1 {
-  padding-top: 10%;
 }

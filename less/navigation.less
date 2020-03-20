@@ -1,31 +1,27 @@
 // Navigation Styles here
 
 
-.navbox{
-display: flex;
-flex-direction: column-reverse;
-    nav{
-        //width: 40%;
-        //display: flex;
-        //justify-content: space-around;
-        display: flex;
-        justify-content: space-between;
-        width: 800px;
-        margin-right: 60%;
+nav{
+    display: flex;
+
+        a{
         
-        a {
-            margin-left: 20px;
             font-size: 1.8rem;
+            margin-left: 20px;
             color:@font-color;
             text-decoration: none;
-            
-            &:hover{
-            color:@font-color;
-            @media @mobile {
-                flex-direction: column;
-                align-items: center;
-            }
-            } // hover tag
-        }// this closes the a tag
-    }// this closes the nav}
+            justify-self: space-between;
+            align-items: baseline;
+
+        }
+
+        nav .first-anchor {
+            margin-left: 1%;
+        }
+
+        
+        
+
+
 }
+
